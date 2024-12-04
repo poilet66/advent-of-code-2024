@@ -15,12 +15,8 @@ def dont_differ(input: List[int]) -> bool:
         if diff < 1 or diff > 3: return False
     return True
 
-list_nums = '1 4 5 6 9'
-nums = list(map(int, list_nums.split(' ')))
-
 with open('day2/input.txt') as f:
     lines = [list(map(int, line.strip().split(' '))) for line in f]
-
 
 safe = 0
 for line in lines:
