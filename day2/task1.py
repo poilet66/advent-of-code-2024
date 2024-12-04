@@ -4,9 +4,9 @@ def all_same(input: List[int]) -> bool:
     op = 'less' if input[0] < input[1] else 'more'
     for i in range(1, len(input) - 1):
         if op == 'less':
-            if int(input[i]) > int(input[i + 1]): return False
+            if input[i] > input[i + 1]: return False
         else:
-            if int(input[i]) < int(input[i + 1]): return False
+            if input[i] < input[i + 1]: return False
     return True
 
 def dont_differ(input: List[int]) -> bool:
